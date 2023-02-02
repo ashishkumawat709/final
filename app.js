@@ -132,7 +132,7 @@ app.get("/data", async (req, res) => {
   res.send(data);
 });
 
-app.listen(3000, () => {
-  console.log(`listening port ${3000}`);
+app.listen(8000, () => {
+  console.log(`listening port ${8000}`);
 });
 // sliceIntoChunks(file, 50);
