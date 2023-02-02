@@ -1,0 +1,101 @@
+[
+  {
+    "id": 11939,
+    "title": "BYD Commercial Paket C230",
+    "price": "108.178,00 € *",
+    "availability": {
+      "date": "",
+      "Stock": "Auf Anfrage"
+    },
+    "articleNumber": "4224",
+    "link": "https://www.memodo.de/gewerbespeicher/byd/4224/byd-commercial-paket-c230"
+  },
+  {
+    "id": 11938,
+    "title": "Trina 405 TSM-DE09.08 Vertex S",
+    "price": "151,88 € *",
+    "availability": {
+      "date": "",
+      "Stock": "Auf Anfrage"
+    },
+    "articleNumber": "6451",
+    "link": "https://www.memodo.de/trina-405-tsm-de09-08-vertex-s"
+  },
+  {
+    "id": 11940,
+    "title": "K2 Modulendklemme Standard Set 32 mm, schwarz",
+    "price": "1,90 € *",
+    "availability": {
+      "date": "Ab Lager verfügbar",
+      "Stock": ""
+    },
+    "articleNumber": "6665",
+    "link": "https://www.memodo.de/k2-modulendklemme-standard-set-32-mm-schwarz"
+  },
+  {
+    "id": 11889,
+    "title": "BYD Battery-Box Premium LVS 12.0",
+    "price": "5.341,00 € *",
+    "availability": {
+      "date": "ab 09.10.2023",
+      "Stock": ""
+    },
+    "articleNumber": "5427",
+    "link": "https://www.memodo.de/byd-battery-box-premium-lvs-12.0"
+  },
+  {
+    "id": 11888,
+    "title": "BYD Battery-Box Premium LVS 8.0",
+    "price": "3.735,00 € *",
+    "availability": {
+      "date": "ab 09.10.2023",
+      "Stock": ""
+    },
+    "articleNumber": "5426",
+    "link": "https://www.memodo.de/byd-battery-box-premium-lvs-8-0"
+  },
+  {
+    "id": 11886,
+    "title": "BYD Battery-Box Premium HVM 16.6",
+    "price": "7.641,00 € *",
+    "availability": {
+      "date": "ab 12.10.2023",
+      "Stock": ""
+    },
+    "articleNumber": "4647",
+    "link": "https://www.memodo.de/byd-battery-box-premium-hvm-16.6"
+  },
+  {
+    "id": 11885,
+    "title": "BYD Battery-Box Premium LVL 15.4 + BMU",
+    "price": "6.058,00 € *",
+    "availability": {
+      "date": "Ab Lager verfügbar",
+      "Stock": ""
+    },
+    "articleNumber": "4665",
+    "link": "https://www.memodo.de/byd-battery-box-premium-lvl-15.4"
+  },
+  {
+    "id": 11887,
+    "title": "BYD Battery-Box Premium LVS 4.0",
+    "price": "2.129,00 € *",
+    "availability": {
+      "date": "ab 09.10.2023",
+      "Stock": ""
+    },
+    "articleNumber": "5425",
+    "link": "https://www.memodo.de/byd-battery-box-premium-lvs-4.0"
+  },
+  {
+    "id": 11190,
+    "title": "",
+    "price": "",
+    "availability": {
+      "date": "",
+      "Stock": ""
+    },
+    "articleNumber": "",
+    "link": "https://www.memodo.de/neoom-blokk-light-88-"
+  }
+]
