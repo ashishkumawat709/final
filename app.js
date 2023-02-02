@@ -11,7 +11,9 @@ const app = express();
 
 app.get("/", (req, res) => {
   async function getData() {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: [
+        "--no-sandbox"
+      ]});
     // const browser = await puppeteer.launch({ headless: false,                                         // use to launch in chrome
     // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
     const page = await browser.newPage();
@@ -35,7 +37,9 @@ app.get("/", (req, res) => {
     });
     console.log(posts[0].token);
 
-    const browser = await puppeteer.launch({headless: false});
+    const browser = await puppeteer.launch({headless: false},{args: [
+        "--no-sandbox"
+      ]});
     const page = await browser.newPage();
     await page.setDefaultNavigationTimeout(0);
     await page.setViewport({
@@ -119,7 +123,7 @@ app.get("/data", async (req, res) => {
   res.send(data);
 });
 
-app.listen(5000, () => {
-  console.log(`listening port ${5000}`);
+app.listen(4000, () => {
+  console.log(`listening port ${4000}`);
 });
 // sliceIntoChunks(file, 50);
