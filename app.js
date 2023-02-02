@@ -11,9 +11,9 @@ const app = express();
 
 app.get("/", (req, res) => {
   async function getData() {
-    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
-    // const browser = await puppeteer.launch({ headless: false,                                         // use to launch in chrome
-    // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
+   // const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    const browser = await puppeteer.launch({ headless: false,                                         // use to launch in chrome
+    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
     const page = await browser.newPage();
     await page.setDefaultNavigationTimeout(0);
     await page.goto("https://www.memodo.de/account/login", {
@@ -35,7 +35,9 @@ app.get("/", (req, res) => {
     });
     console.log(posts[0].token);
 
-    const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox']});
+//     const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox']});
+        const browser = await puppeteer.launch({ headless: false,                                         // use to launch in chrome
+    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
     const page = await browser.newPage();
     await page.setDefaultNavigationTimeout(0);
     await page.setViewport({
@@ -119,7 +121,7 @@ app.get("/data", async (req, res) => {
   res.send(data);
 });
 
-app.listen(6000, () => {
-  console.log(`listening port ${6000}`);
+app.listen(3001, () => {
+  console.log(`listening port ${3001}`);
 });
 // sliceIntoChunks(file, 50);
