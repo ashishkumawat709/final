@@ -9,7 +9,7 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
+// app.get("/", (req, res) => {
   async function getData() {
 //    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
        const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
     console.log(posts[0].token);
 
 //     const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
-        const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
+        const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
 //         const browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'],                                        // use to launch in chrome
 //     executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
     const page = await browser.newPage();
@@ -116,15 +116,15 @@ app.get("/", (req, res) => {
     console.log(solarData.length);
   }
 
-  res.send('starting scraping app in a bit')
-});
+//   res.send('starting scraping app in a bit')
+// });
 
-app.get("/data", async (req, res) => {
+app.get("/", async (req, res) => {
   const data = fs.readFileSync("scrapped.json", "utf-8");
   res.send(data);
 });
 
-app.listen(5001, () => {
-  console.log(`listening port ${5001}`);
+app.listen(3001, () => {
+  console.log(`listening port ${3001}`);
 });
 // sliceIntoChunks(file, 50);
