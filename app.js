@@ -11,7 +11,9 @@ const app = express();
 
 app.get("/", (req, res) => {
   async function getData() {
-   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
+//    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
+       const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
+    
 //     const browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'],                                         // use to launch in chrome
 //     executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
     const page = await browser.newPage();
@@ -35,7 +37,8 @@ app.get("/", (req, res) => {
     });
     console.log(posts[0].token);
 
-    const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
+//     const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
+        const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'], DISPLAY: ":10.0"});
 //         const browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'],                                        // use to launch in chrome
 //     executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'});
     const page = await browser.newPage();
@@ -121,7 +124,7 @@ app.get("/data", async (req, res) => {
   res.send(data);
 });
 
-app.listen(8001, () => {
-  console.log(`listening port ${8001}`);
+app.listen(7001, () => {
+  console.log(`listening port ${7001}`);
 });
 // sliceIntoChunks(file, 50);
